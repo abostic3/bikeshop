@@ -20,8 +20,7 @@ public class BikeController {
 
     @GetMapping
     public List<Bike> getAllBikes(){
-        //bikeRepository.findAll();
-        return  new ArrayList<>();
+        return bikeRepository.findAll();
     }
 
     @PostMapping
